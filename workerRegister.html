@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post a New Job | JobBoard</title>
+    <style>
+      /* Hide Google Translate "Powered by Google" text */
+      .goog-te-gadget span,
+      .goog-te-gadget-simple img {
+          display: none !important;
+      }
+
+      /* Hide Google Translate toolbar */
+      .goog-te-banner-frame.skiptranslate {
+          display: none !important;
+      }
+      /* Hide Google Translate "Powered by Google" text */
+      .goog-te-gadget span,
+      .goog-te-gadget-simple img {
+          display: none !important;
+      }
+
+      /* Hide Google Translate toolbar */
+      .goog-te-banner-frame.skiptranslate {
+          display: none !important;
+      }
+
+      body {
+          top: 0px !important;
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet" />
+    <script
+        src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000"
+        data-border-radius="small"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi,en'}, 'google_translate_element');
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body class="bg-gray-50 min-h-screen">
+    <nav class="bg-white border-b border-gray-200">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-auto" src="https://iili.io/3fFI2St.png"
+                            alt="Logo" />
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div id="google_translate_element"></div>
+                    </div>
+                    <div class="flex items-center">
+                        <a href="workposted.html"><button
+                                class="!rounded-button inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium text-white bg-custom hover:bg-custom/90">
+                                <i class="fas fa-user-circle mr-2"></i>
+                                Account
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+    </nav>
+    <main class="max-w-4xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+        <div class="space-y-8">
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900">Worker Registration</h1>
+                <p class="mt-2 text-sm text-gray-600">Please fill out the form below to register as a worker</p>
+            </div>
+            <form class="space-y-8 preview-mode">
+                <div class="space-y-6 bg-white shadow rounded-lg p-6">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="col-span-2 sm:col-span-1"><label for="first-name"
+                                class="block text-sm font-medium text-gray-700">First Name</label><input type="text"
+                                name="first-name" id="first-name"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom sm:text-sm" />
+                        </div>
+                        <div class="col-span-2 sm:col-span-1"><label for="last-name"
+                                class="block text-sm font-medium text-gray-700">Last Name</label><input type="text"
+                                name="last-name" id="last-name"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom sm:text-sm" />
+                        </div>
+                        <div class="col-span-2"><label for="email" class="block text-sm font-medium text-gray-700">Email
+                                Address</label><input type="email" name="email" id="email"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom sm:text-sm" />
+                        </div>
+                        <div class="col-span-2"><label for="phone" class="block text-sm font-medium text-gray-700">Phone
+                                Number</label><input type="tel" name="phone" id="phone"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom sm:text-sm" />
+                        </div>
+                        <div class="col-span-2"><label for="skills"
+                                class="block text-sm font-medium text-gray-700">Skills &amp; Expertise</label><select
+                                multiple="" name="skills" id="skills"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom sm:text-sm">
+                                <option>Masonry</option>
+                                <option>Painting</option>
+                                <option>Carpentry</option>
+                                <option>Plumbing</option>
+                                <option>Electrical</option>
+                                <option>Landscaping</option>
+                            </select></div>
+                        <div class="col-span-2"><label for="experience"
+                                class="block text-sm font-medium text-gray-700">Years of Experience</label><input
+                                type="number" name="experience" id="experience"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom sm:text-sm" />
+                        </div>
+                        <div class="col-span-2"><label for="about"
+                                class="block text-sm font-medium text-gray-700">About</label><textarea id="about"
+                                name="about" rows="4"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-custom focus:ring-custom sm:text-sm"
+                                placeholder="Tell us about your work experience and qualifications..."></textarea></div>
+                    </div>
+                    <div class="flex justify-end"><a href="postJob.html"><button type="submit"
+                                class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-custom hover:bg-custom/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom">Register</button></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="bg-white mt-12 border-t border-gray-200">
+        <div class="max-w-8xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="text-sm text-gray-500">
+                    © 2024 JobBoard. All rights reserved.
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>

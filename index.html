@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Jobs Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">
+    <script
+        src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000"
+        data-border-radius='small'></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'hi,en'}, 'google_translate_element');
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <header class="bg-white border-b border-gray-200">
+        <nav class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center"> <img class="h-16 w-auto"
+                            src="favicon.png" alt="Logo">
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div id="google_translate_element"></div>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <!-- Worker/Employer Toggle -->
+                    <div class="flex items-center gap-2 bg-gray-200 rounded-lg p-1 relative">
+                        <div id="toggleIndicator"
+                            class="absolute top-0 left-0 w-1/2 h-full bg-white rounded-lg shadow-md transition-transform">
+                        </div>
+                        <button id="workerBtn"
+                            class="relative px-4 py-2 text-sm font-medium text-gray-700 focus:outline-none"
+                            onclick="switchToWorker()">Worker</button>
+                        <button id="employerBtn"
+                            class="relative px-4 py-2 text-sm font-medium text-gray-700 focus:outline-none"
+                            onclick="switchToEmployer()">Employer</button>
+                    </div>
+
+                    <!-- Sign In Button -->
+                    <a href="login.html">
+                        <button class="hover:bg-gray-700 bg-black text-white px-4 py-2 rounded-lg">Sign In</button>
+                    </a>
+                </div>
+
+                <script>
+                    function switchToWorker() {
+                        document.getElementById('toggleIndicator').style.transform = "translateX(0%)";
+                        window.location.href = "index.html";
+                    }
+
+                    function switchToEmployer() {
+                        document.getElementById('toggleIndicator').style.transform = "translateX(100%)";
+                        window.location.href = "employer.html";
+                    }
+                </script>
+        </nav>
+    </header>
+
+    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Connect with Local Jobs & Workers</h1>
+            <p class="text-lg text-gray-600">Find reliable workers or discover job opportunities in your area.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <h2 class="text-xl font-semibold mb-4 flex items-center"> <i class="fas fa-user-tie mr-2"></i>
+                    For Workers
+                </h2>
+                <ul class="space-y-3 mb-6">
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-2"></i>
+                        Easy registration with phone number
+                    </li>
+                    <li class="flex items-center text-gray-600"> <i class="fas fa-check text-green-500 mr-2"></i>
+                        Browse nearby job opportunities
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-2"></i>
+                        Build reputation with ratings & reviews
+                    </li>
+                </ul>
+                <a href="workerRegister.html"><button class="w-full bg-custom text-white py-2 !rounded-button">Register
+                        as Worker</button></a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                <h2 class="text-xl font-semibold mb-4 flex items-center">
+                    <i class="fas fa-building mr-2"></i> For Employers
+                </h2>
+                <ul class="space-y-3 mb-6">
+                    <li class="flex items-center text-gray-600"> <i class="fas fa-check text-green-500 mr-2"></i>
+                        Post job requirements easily
+                    </li>
+                    <li class="flex items-center text-gray-600">
+                        <i class="fas fa-check text-green-500 mr-2"></i>
+                        Find verified workers nearby
+                    </li>
+                    <li class="flex items-center text-gray-600"> <i class="fas fa-check text-green-500 mr-2"></i>
+                        Secure payment system
+                    </li>
+                </ul>
+                <a href="login.html"><button class="w-full bg-custom text-white py-2 !rounded-button">sign
+                        up</button></a>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold mb-6">Active Jobs Near You</h2>
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15879.04009352711!2d78.16620503171178!3d26.211015566557997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c5d1792291fb%3A0xff4fb56d65bc3adf!2sGwalior%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1741377244196!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="col-span-1">
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="font-semibold mb-4">Filter Jobs</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Job Category</label>
+                            <select class="w-full border-gray-300 !rounded-button">
+                                <option>All Categories</option>
+                                <option>Construction</option>
+                                <option>Cleaning</option>
+                                <option>Moving</option>
+                            </select>
+                        </div>
+                        <div> <label class="block text-sm font-medium text-gray-700 mb-1">Distance</label>
+                            <select class="w-full border-gray-300 !rounded-button">
+                                <option>Within 5 km</option>
+                                <option>Within 10 km</option>
+                                <option>Within 20 km</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Pay Rate</label> <select
+                                class="w-full border-gray-300 !rounded-button">
+                                <option>Any Rate</option>
+                                <option>₹100-₹150/hr</option>
+                                <option>₹150-₹200/hr</option>
+                                <option>₹200+/hr</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-2 space-y-4">
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="font-semibold text-lg">Construction Helper</h3>
+                            <p class="text-gray-600">Amity university</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-sm px-2 py-1 rounded">₹150/hr</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Looking for experienced construction helpers for a 2-week project.
+                        Must have own transportation and basic tools.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4 text-sm text-gray-500"> <span><i
+                                    class="far fa-clock mr-1"></i> Full-time</span>
+                            <span><i class="far fa-calendar mr-1"></i> Start: Immediately</span>
+                        </div>
+                        <button class="bg-custom text-white px-4 py-2 !rounded-button">Quick Apply</button>
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="font-semibold text-lg">Moving Assistant</h3>
+                            <p class="text-gray-600">DD nagar</p>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-sm px-2 py-1 rounded">₹100/hr</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Need help with loading and unloading furniture for a local move. One
+                        day job, lunch provided.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4 text-sm text-gray-500"> <span><i
+                                    class="far fa-clock mr-1"></i> One day</span>
+                            <span><i class="far fa-calendar mr-1"></i> This Saturday</span>
+                        </div>
+                        <button class="bg-custom text-white px-4 py-2 !rounded-button">Quick Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-12">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-semibold mb-4">About</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-custom">About Us</a></li>
+                        <li><a href="#" class="hover:text-custom">How it Works</a></li>
+                        <li><a href="#" class="hover:text-custom">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-custom">Help Center</a></li>
+                        <li><a href="#" class="hover:text-custom">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-custom">Safety Tips</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><a href="#" class="hover:text-custom">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-custom">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-custom">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4"> <a href="#" class="text-gray-400 hover:text-custom">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-custom">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-custom">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-8 pt-8 text-center text-gray-600">
+                <p>&copy; 2024 Local Jobs Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

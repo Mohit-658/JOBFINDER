@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <style>
+      /* Hide Google Translate "Powered by Google" text */
+      .goog-te-gadget span,
+      .goog-te-gadget-simple img {
+          display: none !important;
+      }
+
+      /* Hide Google Translate toolbar */
+      .goog-te-banner-frame.skiptranslate {
+          display: none !important;
+      }
+      /* Hide Google Translate "Powered by Google" text */
+      .goog-te-gadget span,
+      .goog-te-gadget-simple img {
+          display: none !important;
+      }
+
+      /* Hide Google Translate toolbar */
+      .goog-te-banner-frame.skiptranslate {
+          display: none !important;
+      }
+
+      body {
+          top: 0px !important;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Wage Worker Search - Find Workers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet" />
+    <script
+        src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000"
+        data-border-radius="small"></script>
+</head>
+
+<body class="bg-gray-50 font-sans">
+    <nav class="bg-white shadow">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-auto" src="https://iili.io/3fFI2St.png" alt="Logo" />
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button
+                        class="!rounded-button bg-white text-gray-600 px-4 py-2 border border-gray-300 hover:bg-gray-50">
+                        <i class="far fa-bell mr-2"></i>
+                        Notifications
+                    </button>
+                    <button class="!rounded-button bg-custom text-white px-4 py-2 hover:bg-custom/90">
+                        <i class="fas fa-plus mr-2"></i>
+                        Post a Job
+                    </button>
+                    <img class="h-8 w-8 rounded-full"
+                        src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a business person with a warm smile, wearing a suit, against a plain light background&width=100&height=100&orientation=squarish&flag=766decf8-70a4-41e5-99d5-56c78a41d3b3&flag=cfb3c4c7-9b99-4c25-a5fe-3af1bac22428&flag=917957dd-bf80-45e8-b4dc-fc066498042d&flag=c1e7d8ab-80d7-45f7-8e22-5470c6d89c9c"
+                        alt="User" />
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <div class="relative">
+                <input type="text" placeholder="Search workers by name, skills or trade..."
+                    class="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-md focus:ring-custom focus:border-custom" />
+                <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+            </div>
+        </div>
+        <div class="flex gap-8">
+            <div class="w-64 flex-shrink-0">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold mb-4">Filters</h3>
+
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Trade</label>
+                            <select class="w-full border-gray-300 rounded-md focus:ring-custom focus:border-custom">
+                                <option>All Trades</option>
+                                <option>Construction</option>
+                                <option>Plumbing</option>
+                                <option>Electrical</option>
+                                <option>Carpentry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Work Type</label>
+                            <select class="w-full border-gray-300 rounded-md focus:ring-custom focus:border-custom">
+                                <option>Any Type</option>
+                                <option>Full Day</option>
+                                <option>Half Day</option>
+                                <option>Hourly</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Location</label>
+                            <input type="text" placeholder="Enter location"
+                                class="w-full border-gray-300 rounded-md focus:ring-custom focus:border-custom" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Daily Rate (₹)</label>
+                            <div class="flex items-center space-x-2">
+                                <input type="text" placeholder="Min"
+                                    class="w-1/2 border-gray-300 rounded-md focus:ring-custom focus:border-custom" />
+                                <span>-</span>
+                                <input type="text" placeholder="Max"
+                                    class="w-1/2 border-gray-300 rounded-md focus:ring-custom focus:border-custom" />
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Skills</label>
+                            <div class="space-y-2">
+                                <label class="flex items-center">
+                                    <input type="checkbox"
+                                        class="rounded border-gray-300 text-custom focus:ring-custom" />
+                                    <span class="ml-2 text-sm">Masonry</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox"
+                                        class="rounded border-gray-300 text-custom focus:ring-custom" />
+                                    <span class="ml-2 text-sm">Painting</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox"
+                                        class="rounded border-gray-300 text-custom focus:ring-custom" />
+                                    <span class="ml-2 text-sm">Heavy Lifting</span>
+                                </label>
+                                <label class="flex items-center">
+                                    <input type="checkbox"
+                                        class="rounded border-gray-300 text-custom focus:ring-custom" />
+                                    <span class="ml-2 text-sm">Helper</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="bg-white p-4 rounded-lg shadow mb-6">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            <button class="!rounded-button px-4 py-2 bg-gray-100 text-gray-700 hover:bg-gray-200">
+                                <i class="far fa-bookmark mr-2"></i>
+                                Save Selected
+                            </button>
+                            <button class="!rounded-button px-4 py-2 bg-gray-100 text-gray-700 hover:bg-gray-200">
+                                <i class="fas fa-download mr-2"></i>
+                                Export
+                            </button>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sm text-gray-600">Sort by:</span>
+                            <select class="border-gray-300 rounded-md focus:ring-custom focus:border-custom">
+                                <option>Best Match</option>
+                                <option>Most Recent</option>
+                                <option>Experience</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-start space-x-4">
+                            <img class="w-16 h-16 rounded-full object-cover"
+                                src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a young female software engineer with a confident smile, wearing business casual attire, against a plain light background&width=200&height=200&orientation=squarish&flag=110a1c0a-dfcd-4268-be3d-c82a2f76bbd8&flag=60478a6c-9be8-4671-8252-7bec0a8e51eb&flag=b2935929-48a1-4076-82d5-fdbc0c053432&flag=4d0ded99-a193-4c5a-9b16-87f9d039c041"
+                                alt="Candidate" />
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="text-lg font-semibold">Rajesh Kumar</h3>
+                                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">95%
+                                        Match</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Skilled Mason</p>
+                                <div class="flex items-center text-sm text-gray-500 mt-1"><i
+                                        class="fas fa-map-marker-alt mr-1"></i> Mumbai, Maharashtra</div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Brick Laying</span>
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Plastering</span>
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Tiling</span>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">10 years of experience in construction work. Specializes
+                            in residential building construction.</p>
+                        <div class="mt-4 flex space-x-2">
+                            <button class="!rounded-button flex-1 bg-custom text-white px-4 py-2 hover:bg-custom/90">
+                                Contact
+                            </button>
+                            <button
+                                class="!rounded-button w-10 h-10 border border-gray-300 flex items-center justify-center hover:bg-gray-50">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-start space-x-4">
+                            <img class="w-16 h-16 rounded-full object-cover"
+                                src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a male UI/UX designer with glasses, wearing a casual shirt, against a plain light background&width=200&height=200&orientation=squarish&flag=85772d55-cfbb-4977-9a46-db6d5318d53a&flag=a092d7b8-e840-4a6b-adfd-ae3053466daf&flag=6aa78d64-d2d4-4d69-8883-6f6693b417c9&flag=13fa119d-1c8f-4a4d-9ba8-dbc986d0c418"
+                                alt="Candidate" />
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="text-lg font-semibold">Suresh Patel</h3>
+                                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">88%
+                                        Match</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Skilled Carpenter</p>
+                                <div class="flex items-center text-sm text-gray-500 mt-1"><i
+                                        class="fas fa-map-marker-alt mr-1"></i> Delhi, NCR</div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Woodworking</span>
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Furniture</span>
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Door Fitting</span>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">8 years of experience in carpentry. Expert in furniture
+                            making and woodwork.</p>
+                        <div class="mt-4 flex space-x-2">
+                            <button class="!rounded-button flex-1 bg-custom text-white px-4 py-2 hover:bg-custom/90">
+                                Contact
+                            </button>
+                            <button
+                                class="!rounded-button w-10 h-10 border border-gray-300 flex items-center justify-center hover:bg-gray-50">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-start space-x-4">
+                            <img class="w-16 h-16 rounded-full object-cover"
+                                src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a female product manager with long hair, wearing a blazer, against a plain light background&width=200&height=200&orientation=squarish&flag=6818a316-f88f-4dcf-a98b-02701c9ea109&flag=a4a3caa1-459a-4bdd-832d-01214a0e5d77&flag=e01d0498-7ebc-4d1a-b3e7-b6ecc8f740c0&flag=b2b40c99-0ed0-457c-b1c2-6cc3e351fb92"
+                                alt="Candidate" />
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="text-lg font-semibold">Lakshmi Devi</h3>
+                                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">92%
+                                        Match</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Painting Expert</p>
+                                <div class="flex items-center text-sm text-gray-500 mt-1"><i
+                                        class="fas fa-map-marker-alt mr-1"></i> Bangalore, Karnataka</div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Interior</span>
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Exterior</span>
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Wall Prep</span>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">6 years of experience in residential and commercial
+                            painting. Excellent attention to detail.</p>
+                        <div class="mt-4 flex space-x-2">
+                            <button class="!rounded-button flex-1 bg-custom text-white px-4 py-2 hover:bg-custom/90">
+                                Contact
+                            </button>
+                            <button
+                                class="!rounded-button w-10 h-10 border border-gray-300 flex items-center justify-center hover:bg-gray-50">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow">
+                        <div class="flex items-start space-x-4">
+                            <img class="w-16 h-16 rounded-full object-cover"
+                                src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a male software architect with a beard, wearing a professional outfit, against a plain light background&width=200&height=200&orientation=squarish&flag=911cdea6-9a4c-4e8b-8519-dd71bc2c01ed&flag=105a66ef-8eef-4e9e-aeac-5ac1193a587d&flag=4f42f6ae-9a0a-4708-8908-c8c9fb992804&flag=471b6d72-9554-435d-80b0-bb09b3364901"
+                                alt="Candidate" />
+                            <div class="flex-1">
+                                <div class="flex items-center justify-between">
+                                    <h3 class="text-lg font-semibold">Mohammad Ali</h3>
+                                    <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">85%
+                                        Match</span>
+                                </div>
+                                <p class="text-sm text-gray-600">Skilled Electrician</p>
+                                <div class="flex items-center text-sm text-gray-500 mt-1"><i
+                                        class="fas fa-map-marker-alt mr-1"></i> Pune, Maharashtra</div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Wiring</span>
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Installation</span>
+                                <span class="px-2 py-1 bg-gray-100 text-sm rounded">Repair</span>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-600">12 years of experience in electrical work. Licensed
+                            electrician with safety certifications.</p>
+                        <div class="mt-4 flex space-x-2">
+                            <button class="!rounded-button flex-1 bg-custom text-white px-4 py-2 hover:bg-custom/90">
+                                Contact
+                            </button>
+                            <button
+                                class="!rounded-button w-10 h-10 border border-gray-300 flex items-center justify-center hover:bg-gray-50">
+                                <i class="far fa-bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 flex items-center justify-between">
+                    <div class="text-sm text-gray-700">
+                        Showing <span class="font-medium">1</span> to <span class="font-medium">8</span> of <span
+                            class="font-medium">68</span> results
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button
+                            class="!rounded-button px-3 py-2 border border-gray-300 bg-white text-gray-700 hover:bg-gray-50 disabled:opacity-50"
+                            disabled="">
+                            Previous
+                        </button>
+                        <button
+                            class="!rounded-button px-3 py-2 border border-gray-300 bg-white text-gray-700 hover:bg-gray-50">
+                            Next
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
